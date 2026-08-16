@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Web Page</title>
+
+  <!--
+    Don't worry about the <style> block below yet!
+    CSS (the code that controls colors, spacing, and layout) is
+    Week 2 and 3's topic. For now, just focus on the HTML further
+    down the page - the <header>, <nav>, <main>, <section>, and
+    <footer> tags you read about this week. This styling is here
+    just so your first live page feels like a real one.
+  -->
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: #22303f;
+      background: #f7f9fb;
+      line-height: 1.6;
+    }
+    header {
+      background: #1B3A6B;
+      color: #fff;
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 0.25rem; font-size: 2.2rem; }
+    header p { margin: 0; opacity: 0.85; }
+    nav {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.4rem 0.9rem;
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+    nav a:hover { background: rgba(255,255,255,0.15); }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+    section { margin-bottom: 3rem; }
+    section h2 {
+      color: #1B3A6B;
+      border-bottom: 2px solid #e0e6ee;
+      padding-bottom: 0.4rem;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.9rem;
+      list-style: none;
+      padding: 0;
+      margin: 1.25rem 0 0;
+    }
+    .skills-grid li {
+      background: #fff;
+      border: 1px solid #e0e6ee;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      font-size: 0.95rem;
+    }
+    .skills-grid li strong { display: block; color: #1B3A6B; }
+    figure { margin: 0; }
+    figure img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+    figcaption {
+      font-size: 0.85rem;
+      color: #5a6a7a;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: #5a6a7a;
+      font-size: 0.9rem;
+      border-top: 1px solid #e0e6ee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Page</h1>
+    <p>Built in Week 1 of Internet Programming ; and it's only going to get better from here.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#roadmap">This Semester</a>
+      <a href="#photo">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi! I'm a student in Internet Programming, and this is the first page I've ever put live on the web. Replace this paragraph with a couple of sentences about yourself ; your major, where you're from, or anything you'd like classmates to know.</p>
+    </section>
+
+    <section id="roadmap">
+      <h2>What This Page Will Become</h2>
+      <p>This plain page is just the starting point. Over the semester, you'll layer in the skills below ; often by editing this very page.</p>
+      <ul class="skills-grid">
+        <li><strong>CSS Layout</strong>Flexbox &amp; Grid for real page design</li>
+        <li><strong>JavaScript</strong>Make pages interactive</li>
+        <li><strong>APIs</strong>Pull in live data</li>
+        <li><strong>Python/Flask</strong>Build your own backend</li>
+        <li><strong>React</strong>Build a full responsive app</li>
+        <li><strong>Usability</strong>Test and improve real interfaces</li>
+      </ul>
+    </section>
+
+    <section id="photo">
+      <h2>Gallery</h2>
+      <figure>
+        <img src="https://placehold.co/700x350" alt="Placeholder image - replace this description with something meaningful">
+        <figcaption>Replace this with a photo and caption of your own once you're comfortable editing images.</figcaption>
+      </figure>
+    </section>
+
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <p>Add your email, a social link, or however you'd like classmates to be able to reach you.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ; Built for Internet Programming, Week 1</p>
+  </footer>
+
+</body>
+</html>
